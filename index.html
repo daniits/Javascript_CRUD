@@ -1,52 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS CRUD</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
     <table>
-      <tr>
-        <td>
-          <form autocomplete="off" onsubmit="onFormSubmit()">
-            <div>
-              <label for="productCode">Product Code</label>
-              <input type="text" name="productCode" id="productCode" />
-            </div>
-            <div>
-              <label for="product">Product Name</label>
-              <input type="text" name="product" id="product" />
-            </div>
-            <div>
-              <label for="qty">Quantity</label>
-              <input type="number" name="qty" id="qty" />
-            </div>
-            <div>
-              <label for="perPrice">Price</label>
-              <input type="number" name="perPrice" id="perPrice" />
-            </div>
-            <div class="form_action--button">
-            <input type="submit" value="Submit" />
-            <input type="reset" value="Reset" />
-            </div>
-          </form>
-          <td>
-              <table class="list" id="storelist">
-                  <thead>
-                      <tr>
-                          <th>Product Code</th>
-                          <th>Product Name</th>
-                          <th>Quantity</th>
-                          <th>Price</th>
-                      </tr>
-                  </thead>
-              </table>
-          </td>
-        </td>
-      </tr>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Product Code</label>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">Product Name</label>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="qty">Qty</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Price</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Product Name</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
     </table>
-  </body>
+    <script type="text/javascript" src="./sc.js"></script>
+</body>
 </html>
