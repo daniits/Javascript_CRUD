@@ -1,0 +1,25 @@
+body {
+  background-image: url(1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+table {
+  width: 80%;
+  margin: 40px auto;
+  background: rgb(124, 154, 157);
+}
+table.list {
+  text-align: center;
+  width: 100%;
+}
+td {
+  border: 1px solid rgb(204, 200, 200);
+  text-align: left;
+  padding: 8px 15px;
+}
+tr:nth-child(even),
+table.list thread > tr {
+  background-color: rgb(204, 200, 200);
+}
+input[type="text"],input[type=""]
